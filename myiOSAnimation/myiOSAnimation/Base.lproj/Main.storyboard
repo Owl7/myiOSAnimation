@@ -40,11 +40,61 @@
                     <navigationItem key="navigationItem" id="cDE-RO-aNb"/>
                     <connections>
                         <segue destination="Sqh-tr-M1U" kind="show" identifier="kShowMask" id="SKl-nN-6oh"/>
+                        <segue destination="ehu-Xf-wk0" kind="show" identifier="kShowFillModeVC" id="Uvr-cc-ZXs"/>
+                        <segue destination="JIO-P8-LDB" kind="show" identifier="kShowPath" id="aGB-gk-0sK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OdE-3m-lZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="824" y="364"/>
+        </scene>
+        <!--Fill Mode View Controller-->
+        <scene sceneID="dIB-p5-cf8">
+            <objects>
+                <viewController id="ehu-Xf-wk0" customClass="FillModeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lkB-kh-QO2"/>
+                        <viewControllerLayoutGuide type="bottom" id="dpL-3f-F08"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sV3-Bo-Mz7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhw-v2-j7B">
+                                <rect key="frame" x="20" y="550" width="165" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CGX-4M-frp"/>
+                                    <constraint firstAttribute="width" constant="165" id="oJy-6c-Bys"/>
+                                </constraints>
+                                <state key="normal" title="startBackwardsFillMode"/>
+                                <connections>
+                                    <action selector="startBackWardFillMode:" destination="ehu-Xf-wk0" eventType="touchUpInside" id="TVv-V9-QEK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Q0-2y-HdR">
+                                <rect key="frame" x="426" y="550" width="154" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="1Iu-mq-CWf"/>
+                                    <constraint firstAttribute="height" constant="30" id="XxM-hc-HhZ"/>
+                                </constraints>
+                                <state key="normal" title="startForwardsFillMode"/>
+                                <connections>
+                                    <action selector="startForwardFillMode:" destination="ehu-Xf-wk0" eventType="touchUpInside" id="oX8-N4-LLK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dpL-3f-F08" firstAttribute="top" secondItem="8Q0-2y-HdR" secondAttribute="bottom" constant="20" id="ADF-Tx-ffp"/>
+                            <constraint firstItem="Mhw-v2-j7B" firstAttribute="leading" secondItem="sV3-Bo-Mz7" secondAttribute="leading" constant="20" id="B8c-g8-rO0"/>
+                            <constraint firstAttribute="trailing" secondItem="8Q0-2y-HdR" secondAttribute="trailing" constant="20" id="MLj-E3-p4u"/>
+                            <constraint firstItem="dpL-3f-F08" firstAttribute="top" secondItem="Mhw-v2-j7B" secondAttribute="bottom" constant="20" id="O9I-jO-FbT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="740-Bw-26h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="1162"/>
         </scene>
         <!--Mask Animation View Controller-->
         <scene sceneID="uz8-vm-SVT">
@@ -127,6 +177,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vze-Je-X5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1531" y="364"/>
+        </scene>
+        <!--Path Animation View Controller-->
+        <scene sceneID="Qtk-7k-q3o">
+            <objects>
+                <viewController id="JIO-P8-LDB" customClass="PathAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hm2-Sd-qHs"/>
+                        <viewControllerLayoutGuide type="bottom" id="GC2-wx-A3P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="csK-cx-W46">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48N-Uc-Q3v">
+                                <rect key="frame" x="234" y="550" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="OGE-Wc-n4I"/>
+                                    <constraint firstAttribute="height" constant="30" id="wuH-Vm-wrO"/>
+                                </constraints>
+                                <state key="normal" title="startPathAnimation"/>
+                                <connections>
+                                    <action selector="startPathAnimation:" destination="JIO-P8-LDB" eventType="touchUpInside" id="C5s-Hc-fBN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="48N-Uc-Q3v" firstAttribute="centerX" secondItem="csK-cx-W46" secondAttribute="centerX" id="Vok-Fy-dki"/>
+                            <constraint firstItem="GC2-wx-A3P" firstAttribute="top" secondItem="48N-Uc-Q3v" secondAttribute="bottom" constant="20" id="keo-Ks-4W4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUK-ep-uLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1135" y="1162"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JSm-TR-wIn">

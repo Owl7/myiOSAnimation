@@ -20,6 +20,9 @@
 		845CA9D21D37784200BCBEB6 /* wuyanzu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 845CA9CE1D37784200BCBEB6 /* wuyanzu.jpg */; };
 		845CA9D91D377ACA00BCBEB6 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CA9D81D377ACA00BCBEB6 /* HomeTableViewController.m */; };
 		845CA9DC1D37801B00BCBEB6 /* MaskAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CA9DB1D37801B00BCBEB6 /* MaskAnimationViewController.m */; };
+		84798C651D3D1EFE007119FB /* FillModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84798C641D3D1EFE007119FB /* FillModeViewController.m */; };
+		84798C681D3D1F1F007119FB /* PathAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84798C671D3D1F1F007119FB /* PathAnimationViewController.m */; };
+		84798C6B1D3D2546007119FB /* CABasicAnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84798C6A1D3D2546007119FB /* CABasicAnimationDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,12 @@
 		845CA9D81D377ACA00BCBEB6 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
 		845CA9DA1D37801B00BCBEB6 /* MaskAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskAnimationViewController.h; sourceTree = "<group>"; };
 		845CA9DB1D37801B00BCBEB6 /* MaskAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskAnimationViewController.m; sourceTree = "<group>"; };
+		84798C631D3D1EFE007119FB /* FillModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillModeViewController.h; sourceTree = "<group>"; };
+		84798C641D3D1EFE007119FB /* FillModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FillModeViewController.m; sourceTree = "<group>"; };
+		84798C661D3D1F1F007119FB /* PathAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathAnimationViewController.h; sourceTree = "<group>"; };
+		84798C671D3D1F1F007119FB /* PathAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathAnimationViewController.m; sourceTree = "<group>"; };
+		84798C691D3D2546007119FB /* CABasicAnimationDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationDemo.h; sourceTree = "<group>"; };
+		84798C6A1D3D2546007119FB /* CABasicAnimationDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +196,8 @@
 		845CA9CA1D37781700BCBEB6 /* CAAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				84798C691D3D2546007119FB /* CABasicAnimationDemo.h */,
+				84798C6A1D3D2546007119FB /* CABasicAnimationDemo.m */,
 			);
 			name = CAAnimation;
 			sourceTree = "<group>";
@@ -196,6 +207,10 @@
 			children = (
 				845CA9DA1D37801B00BCBEB6 /* MaskAnimationViewController.h */,
 				845CA9DB1D37801B00BCBEB6 /* MaskAnimationViewController.m */,
+				84798C631D3D1EFE007119FB /* FillModeViewController.h */,
+				84798C641D3D1EFE007119FB /* FillModeViewController.m */,
+				84798C661D3D1F1F007119FB /* PathAnimationViewController.h */,
+				84798C671D3D1F1F007119FB /* PathAnimationViewController.m */,
 			);
 			name = CABasicAnimationVC;
 			sourceTree = "<group>";
@@ -355,9 +370,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84798C651D3D1EFE007119FB /* FillModeViewController.m in Sources */,
 				845BF8111D369A5000D7B444 /* AppDelegate.m in Sources */,
 				845CA9D91D377ACA00BCBEB6 /* HomeTableViewController.m in Sources */,
 				845BF80E1D369A5000D7B444 /* main.m in Sources */,
+				84798C6B1D3D2546007119FB /* CABasicAnimationDemo.m in Sources */,
+				84798C681D3D1F1F007119FB /* PathAnimationViewController.m in Sources */,
 				845CA9DC1D37801B00BCBEB6 /* MaskAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
