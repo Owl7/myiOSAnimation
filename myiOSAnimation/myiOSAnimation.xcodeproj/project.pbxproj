@@ -22,6 +22,9 @@
 		845CA9DC1D37801B00BCBEB6 /* MaskAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CA9DB1D37801B00BCBEB6 /* MaskAnimationViewController.m */; };
 		8468FDDF1D3F1E5B001EF9CB /* ShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FDDE1D3F1E5B001EF9CB /* ShadowViewController.m */; };
 		8468FDE21D3F1E98001EF9CB /* TransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FDE11D3F1E98001EF9CB /* TransformViewController.m */; };
+		8468FDE51D3F45DE001EF9CB /* SequenceAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FDE41D3F45DE001EF9CB /* SequenceAnimationViewController.m */; };
+		8468FDE81D3F45F7001EF9CB /* CellAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FDE71D3F45F7001EF9CB /* CellAnimationTableViewController.m */; };
+		8468FDEC1D3F4DD3001EF9CB /* PGCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FDEB1D3F4DD3001EF9CB /* PGCardTableViewCell.m */; };
 		84798C651D3D1EFE007119FB /* FillModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84798C641D3D1EFE007119FB /* FillModeViewController.m */; };
 		84798C681D3D1F1F007119FB /* PathAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84798C671D3D1F1F007119FB /* PathAnimationViewController.m */; };
 		84798C6B1D3D2546007119FB /* CABasicAnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84798C6A1D3D2546007119FB /* CABasicAnimationDemo.m */; };
@@ -71,6 +74,12 @@
 		8468FDDE1D3F1E5B001EF9CB /* ShadowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowViewController.m; sourceTree = "<group>"; };
 		8468FDE01D3F1E98001EF9CB /* TransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformViewController.h; sourceTree = "<group>"; };
 		8468FDE11D3F1E98001EF9CB /* TransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformViewController.m; sourceTree = "<group>"; };
+		8468FDE31D3F45DE001EF9CB /* SequenceAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequenceAnimationViewController.h; sourceTree = "<group>"; };
+		8468FDE41D3F45DE001EF9CB /* SequenceAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SequenceAnimationViewController.m; sourceTree = "<group>"; };
+		8468FDE61D3F45F7001EF9CB /* CellAnimationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellAnimationTableViewController.h; sourceTree = "<group>"; };
+		8468FDE71D3F45F7001EF9CB /* CellAnimationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellAnimationTableViewController.m; sourceTree = "<group>"; };
+		8468FDEA1D3F4DD3001EF9CB /* PGCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGCardTableViewCell.h; sourceTree = "<group>"; };
+		8468FDEB1D3F4DD3001EF9CB /* PGCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGCardTableViewCell.m; sourceTree = "<group>"; };
 		84798C631D3D1EFE007119FB /* FillModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillModeViewController.h; sourceTree = "<group>"; };
 		84798C641D3D1EFE007119FB /* FillModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FillModeViewController.m; sourceTree = "<group>"; };
 		84798C661D3D1F1F007119FB /* PathAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathAnimationViewController.h; sourceTree = "<group>"; };
@@ -171,6 +180,8 @@
 		845CA9C71D3777B600BCBEB6 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				8468FDEA1D3F4DD3001EF9CB /* PGCardTableViewCell.h */,
+				8468FDEB1D3F4DD3001EF9CB /* PGCardTableViewCell.m */,
 			);
 			name = CustomView;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 		845CA9C91D3777EF00BCBEB6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8468FDE91D3F4DAE001EF9CB /* View */,
 				845CA9D61D3778A300BCBEB6 /* CAKeyframeAnimation */,
 				845CA9D51D37789300BCBEB6 /* AdvancedAnimationSample */,
 				845CA9D41D37788500BCBEB6 /* CAGroupAninationVC */,
@@ -228,6 +240,8 @@
 		845CA9D41D37788500BCBEB6 /* CAGroupAninationVC */ = {
 			isa = PBXGroup;
 			children = (
+				8468FDE31D3F45DE001EF9CB /* SequenceAnimationViewController.h */,
+				8468FDE41D3F45DE001EF9CB /* SequenceAnimationViewController.m */,
 			);
 			name = CAGroupAninationVC;
 			sourceTree = "<group>";
@@ -235,6 +249,8 @@
 		845CA9D51D37789300BCBEB6 /* AdvancedAnimationSample */ = {
 			isa = PBXGroup;
 			children = (
+				8468FDE61D3F45F7001EF9CB /* CellAnimationTableViewController.h */,
+				8468FDE71D3F45F7001EF9CB /* CellAnimationTableViewController.m */,
 			);
 			name = AdvancedAnimationSample;
 			sourceTree = "<group>";
@@ -244,6 +260,13 @@
 			children = (
 			);
 			name = CAKeyframeAnimation;
+			sourceTree = "<group>";
+		};
+		8468FDE91D3F4DAE001EF9CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,14 +403,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8468FDEC1D3F4DD3001EF9CB /* PGCardTableViewCell.m in Sources */,
 				84798C651D3D1EFE007119FB /* FillModeViewController.m in Sources */,
 				845BF8111D369A5000D7B444 /* AppDelegate.m in Sources */,
 				845CA9D91D377ACA00BCBEB6 /* HomeTableViewController.m in Sources */,
 				845BF80E1D369A5000D7B444 /* main.m in Sources */,
 				84798C6B1D3D2546007119FB /* CABasicAnimationDemo.m in Sources */,
 				84798C681D3D1F1F007119FB /* PathAnimationViewController.m in Sources */,
+				8468FDE51D3F45DE001EF9CB /* SequenceAnimationViewController.m in Sources */,
 				8468FDE21D3F1E98001EF9CB /* TransformViewController.m in Sources */,
 				8468FDDF1D3F1E5B001EF9CB /* ShadowViewController.m in Sources */,
+				8468FDE81D3F45F7001EF9CB /* CellAnimationTableViewController.m in Sources */,
 				845CA9DC1D37801B00BCBEB6 /* MaskAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
