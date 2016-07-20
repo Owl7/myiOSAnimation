@@ -42,11 +42,13 @@
                         <segue destination="Sqh-tr-M1U" kind="show" identifier="kShowMask" id="SKl-nN-6oh"/>
                         <segue destination="ehu-Xf-wk0" kind="show" identifier="kShowFillModeVC" id="Uvr-cc-ZXs"/>
                         <segue destination="JIO-P8-LDB" kind="show" identifier="kShowPath" id="aGB-gk-0sK"/>
+                        <segue destination="5nA-Nc-4Ui" kind="show" identifier="kShowShadow" id="chx-bu-KS8"/>
+                        <segue destination="kCK-qz-s7c" kind="show" identifier="kShowTransform" id="p9o-3T-Sbf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OdE-3m-lZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="824" y="364"/>
+            <point key="canvasLocation" x="832" y="364"/>
         </scene>
         <!--Fill Mode View Controller-->
         <scene sceneID="dIB-p5-cf8">
@@ -94,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="740-Bw-26h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="512" y="1162"/>
+            <point key="canvasLocation" x="32" y="1162"/>
         </scene>
         <!--Mask Animation View Controller-->
         <scene sceneID="uz8-vm-SVT">
@@ -178,6 +180,141 @@
             </objects>
             <point key="canvasLocation" x="1531" y="364"/>
         </scene>
+        <!--Transform View Controller-->
+        <scene sceneID="4eA-6v-Neh">
+            <objects>
+                <viewController id="kCK-qz-s7c" customClass="TransformViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MZK-bX-glZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="asz-Tg-ncD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="snf-6d-3lR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wuyanzu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ESY-bq-N4y">
+                                <rect key="frame" x="175" y="64" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="DiW-mn-QxJ"/>
+                                    <constraint firstAttribute="width" constant="250" id="U9Q-mh-6k5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNI-cf-dI5">
+                                <rect key="frame" x="20" y="550" width="112" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PUP-nf-X6g"/>
+                                    <constraint firstAttribute="width" constant="112" id="bos-AA-OHr"/>
+                                </constraints>
+                                <state key="normal" title="startTransformX"/>
+                                <connections>
+                                    <action selector="startTransformXAxisAnimation:" destination="kCK-qz-s7c" eventType="touchUpInside" id="bMQ-NG-BQe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj8-zC-KIK">
+                                <rect key="frame" x="245" y="550" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="hTx-59-bUG"/>
+                                    <constraint firstAttribute="height" constant="30" id="oft-YG-ihl"/>
+                                </constraints>
+                                <state key="normal" title="startTransformY"/>
+                                <connections>
+                                    <action selector="startTransformYAxisAnimation:" destination="kCK-qz-s7c" eventType="touchUpInside" id="JPn-ya-mgT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ote-Fn-Vkg">
+                                <rect key="frame" x="468" y="550" width="112" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4DG-Fp-HlU"/>
+                                    <constraint firstAttribute="width" constant="112" id="f05-Pb-wzs"/>
+                                </constraints>
+                                <state key="normal" title="startTransformZ"/>
+                                <connections>
+                                    <action selector="startTransformZAxisAnimation:" destination="kCK-qz-s7c" eventType="touchUpInside" id="0n6-Mg-BYg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="asz-Tg-ncD" firstAttribute="top" secondItem="ote-Fn-Vkg" secondAttribute="bottom" constant="20" id="A49-tF-R8C"/>
+                            <constraint firstItem="ESY-bq-N4y" firstAttribute="centerX" secondItem="snf-6d-3lR" secondAttribute="centerX" id="DAB-O9-ZLu"/>
+                            <constraint firstItem="fj8-zC-KIK" firstAttribute="centerX" secondItem="snf-6d-3lR" secondAttribute="centerX" id="DZ8-Yx-UgF"/>
+                            <constraint firstItem="asz-Tg-ncD" firstAttribute="top" secondItem="DNI-cf-dI5" secondAttribute="bottom" constant="20" id="Hm8-dJ-nMi"/>
+                            <constraint firstItem="asz-Tg-ncD" firstAttribute="top" secondItem="fj8-zC-KIK" secondAttribute="bottom" constant="20" id="O46-JU-a1D"/>
+                            <constraint firstItem="ESY-bq-N4y" firstAttribute="top" secondItem="snf-6d-3lR" secondAttribute="top" constant="64" id="VJ0-bm-tMV"/>
+                            <constraint firstAttribute="trailing" secondItem="ote-Fn-Vkg" secondAttribute="trailing" constant="20" id="YI1-vh-6pe"/>
+                            <constraint firstItem="DNI-cf-dI5" firstAttribute="leading" secondItem="snf-6d-3lR" secondAttribute="leading" constant="20" id="rG7-np-yZP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="ESY-bq-N4y" id="AY9-Ey-VJV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5K-Rp-iZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1865" y="1162"/>
+        </scene>
+        <!--Shadow View Controller-->
+        <scene sceneID="cWe-0c-vRh">
+            <objects>
+                <viewController id="5nA-Nc-4Ui" customClass="ShadowViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RBp-Rn-4tZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="rZ0-me-GZA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PKr-ti-2kW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wuyanzu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Vku-Qt-Iig">
+                                <rect key="frame" x="175" y="64" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="H0i-B3-yfd"/>
+                                    <constraint firstAttribute="height" constant="250" id="Vpg-d7-OCb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="cNc-Rm-60P"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="isJ-xY-kDN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTJ-al-cXL">
+                                <rect key="frame" x="20" y="550" width="165" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="IFr-G4-zPl"/>
+                                    <constraint firstAttribute="height" constant="30" id="VbK-cq-yse"/>
+                                </constraints>
+                                <state key="normal" title="shadowOffsetAnimation"/>
+                                <connections>
+                                    <action selector="startShadowOffsetAnimation:" destination="5nA-Nc-4Ui" eventType="touchUpInside" id="3lS-QK-MfI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knF-YY-eIc">
+                                <rect key="frame" x="422" y="550" width="158" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="Cax-de-MpE"/>
+                                    <constraint firstAttribute="height" constant="30" id="DOO-Rp-dvV"/>
+                                </constraints>
+                                <state key="normal" title="shadowColorAnimation"/>
+                                <connections>
+                                    <action selector="startShadowColorAnimation:" destination="5nA-Nc-4Ui" eventType="touchUpInside" id="SRb-6W-991"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rZ0-me-GZA" firstAttribute="top" secondItem="UTJ-al-cXL" secondAttribute="bottom" constant="20" id="ALl-lv-NRu"/>
+                            <constraint firstAttribute="trailing" secondItem="knF-YY-eIc" secondAttribute="trailing" constant="20" id="E91-65-vyB"/>
+                            <constraint firstItem="rZ0-me-GZA" firstAttribute="top" secondItem="knF-YY-eIc" secondAttribute="bottom" constant="20" id="dfJ-6w-TWl"/>
+                            <constraint firstItem="UTJ-al-cXL" firstAttribute="leading" secondItem="PKr-ti-2kW" secondAttribute="leading" constant="20" id="ozf-q3-RmR"/>
+                            <constraint firstItem="Vku-Qt-Iig" firstAttribute="centerX" secondItem="PKr-ti-2kW" secondAttribute="centerX" id="uIP-Jt-vyq"/>
+                            <constraint firstItem="Vku-Qt-Iig" firstAttribute="top" secondItem="PKr-ti-2kW" secondAttribute="top" constant="64" id="vFr-gW-BQH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="Vku-Qt-Iig" id="1ep-Gs-P4a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AzW-Ue-XHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253" y="1162"/>
+        </scene>
         <!--Path Animation View Controller-->
         <scene sceneID="Qtk-7k-q3o">
             <objects>
@@ -211,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUK-ep-uLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1135" y="1162"/>
+            <point key="canvasLocation" x="643" y="1162"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JSm-TR-wIn">
@@ -235,5 +372,6 @@
     <resources>
         <image name="mask1.png" width="104" height="157"/>
         <image name="mask2.png" width="104" height="157"/>
+        <image name="wuyanzu.jpg" width="320" height="480"/>
     </resources>
 </document>

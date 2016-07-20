@@ -11,8 +11,8 @@
 #define DEGREES_TO_RADIANS(degrees)((M_PI * degrees)/180)
 
 NSString * const kXAxisTransform = @"transform.rotation.x";
-NSString * const kYAxisTransform = @"transform.rotation.x";
-NSString * const kZAxisTransform = @"transform.rotation.x";
+NSString * const kYAxisTransform = @"transform.rotation.y";
+NSString * const kZAxisTransform = @"transform.rotation.z";
 
 static CGFloat const kAnimationDuration = 1;
 
