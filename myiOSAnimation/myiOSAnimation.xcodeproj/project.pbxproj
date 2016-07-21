@@ -25,6 +25,8 @@
 		8468FDE51D3F45DE001EF9CB /* SequenceAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FDE41D3F45DE001EF9CB /* SequenceAnimationViewController.m */; };
 		8468FDE81D3F45F7001EF9CB /* CellAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FDE71D3F45F7001EF9CB /* CellAnimationTableViewController.m */; };
 		8468FDEC1D3F4DD3001EF9CB /* PGCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FDEB1D3F4DD3001EF9CB /* PGCardTableViewCell.m */; };
+		8468FDF21D3F5589001EF9CB /* CityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FDF11D3F5589001EF9CB /* CityTableViewCell.m */; };
+		846B29A71D40C8130033CE28 /* CityGuidesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B29A61D40C8130033CE28 /* CityGuidesViewController.m */; };
 		84798C651D3D1EFE007119FB /* FillModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84798C641D3D1EFE007119FB /* FillModeViewController.m */; };
 		84798C681D3D1F1F007119FB /* PathAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84798C671D3D1F1F007119FB /* PathAnimationViewController.m */; };
 		84798C6B1D3D2546007119FB /* CABasicAnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84798C6A1D3D2546007119FB /* CABasicAnimationDemo.m */; };
@@ -80,6 +82,10 @@
 		8468FDE71D3F45F7001EF9CB /* CellAnimationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellAnimationTableViewController.m; sourceTree = "<group>"; };
 		8468FDEA1D3F4DD3001EF9CB /* PGCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGCardTableViewCell.h; sourceTree = "<group>"; };
 		8468FDEB1D3F4DD3001EF9CB /* PGCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGCardTableViewCell.m; sourceTree = "<group>"; };
+		8468FDF01D3F5589001EF9CB /* CityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewCell.h; sourceTree = "<group>"; };
+		8468FDF11D3F5589001EF9CB /* CityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewCell.m; sourceTree = "<group>"; };
+		846B29A51D40C8130033CE28 /* CityGuidesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityGuidesViewController.h; sourceTree = "<group>"; };
+		846B29A61D40C8130033CE28 /* CityGuidesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityGuidesViewController.m; sourceTree = "<group>"; };
 		84798C631D3D1EFE007119FB /* FillModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillModeViewController.h; sourceTree = "<group>"; };
 		84798C641D3D1EFE007119FB /* FillModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FillModeViewController.m; sourceTree = "<group>"; };
 		84798C661D3D1F1F007119FB /* PathAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathAnimationViewController.h; sourceTree = "<group>"; };
@@ -233,6 +239,8 @@
 				8468FDDE1D3F1E5B001EF9CB /* ShadowViewController.m */,
 				8468FDE01D3F1E98001EF9CB /* TransformViewController.h */,
 				8468FDE11D3F1E98001EF9CB /* TransformViewController.m */,
+				846B29A51D40C8130033CE28 /* CityGuidesViewController.h */,
+				846B29A61D40C8130033CE28 /* CityGuidesViewController.m */,
 			);
 			name = CABasicAnimationVC;
 			sourceTree = "<group>";
@@ -265,6 +273,8 @@
 		8468FDE91D3F4DAE001EF9CB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8468FDF01D3F5589001EF9CB /* CityTableViewCell.h */,
+				8468FDF11D3F5589001EF9CB /* CityTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -403,10 +413,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8468FDF21D3F5589001EF9CB /* CityTableViewCell.m in Sources */,
 				8468FDEC1D3F4DD3001EF9CB /* PGCardTableViewCell.m in Sources */,
 				84798C651D3D1EFE007119FB /* FillModeViewController.m in Sources */,
 				845BF8111D369A5000D7B444 /* AppDelegate.m in Sources */,
 				845CA9D91D377ACA00BCBEB6 /* HomeTableViewController.m in Sources */,
+				846B29A71D40C8130033CE28 /* CityGuidesViewController.m in Sources */,
 				845BF80E1D369A5000D7B444 /* main.m in Sources */,
 				84798C6B1D3D2546007119FB /* CABasicAnimationDemo.m in Sources */,
 				84798C681D3D1F1F007119FB /* PathAnimationViewController.m in Sources */,

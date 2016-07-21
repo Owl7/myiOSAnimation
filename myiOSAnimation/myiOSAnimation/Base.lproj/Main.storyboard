@@ -46,6 +46,7 @@
                         <segue destination="kCK-qz-s7c" kind="show" identifier="kShowTransform" id="p9o-3T-Sbf"/>
                         <segue destination="hgG-do-ahu" kind="show" identifier="kShowGroup" id="9dK-Cz-T5Y"/>
                         <segue destination="MzU-dr-RQj" kind="show" identifier="kShowCellAnimation" id="lEt-oP-1VH"/>
+                        <segue destination="LPe-Gp-fLJ" kind="show" identifier="kPushToCity" id="S9D-GG-hzo"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OdE-3m-lZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -259,41 +260,39 @@
             </objects>
             <point key="canvasLocation" x="2239" y="1162"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="5QA-fQ-AdY">
+        <!--City Guides View Controller-->
+        <scene sceneID="sFt-S3-mkk">
             <objects>
-                <viewController id="xaV-kL-uH4" sceneMemberID="viewController">
+                <viewController id="LPe-Gp-fLJ" customClass="CityGuidesViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ROL-k5-hlW"/>
-                        <viewControllerLayoutGuide type="bottom" id="Bxi-lg-drd"/>
+                        <viewControllerLayoutGuide type="top" id="556-np-6JZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="GWs-gd-e8u"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="g0j-iW-ygL">
+                    <view key="view" contentMode="scaleToFill" id="jzM-k1-ZNI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3VK-TR-XqL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3VK-TR-XqL" secondAttribute="trailing" id="1sP-hh-LPI"/>
+                            <constraint firstAttribute="bottom" secondItem="3VK-TR-XqL" secondAttribute="bottom" id="Nch-LM-4Tu"/>
+                            <constraint firstItem="3VK-TR-XqL" firstAttribute="leading" secondItem="jzM-k1-ZNI" secondAttribute="leading" id="Oil-XI-MAO"/>
+                            <constraint firstItem="3VK-TR-XqL" firstAttribute="top" secondItem="jzM-k1-ZNI" secondAttribute="top" id="gGf-WJ-L2j"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityTableView" destination="3VK-TR-XqL" id="N6I-OO-QX4"/>
+                        <outlet property="tableViewTopConstraint" destination="gGf-WJ-L2j" id="Hl9-sc-d93"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iF2-pv-7AN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TAO-jT-Bwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2894" y="1162"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="K8W-jE-3es">
-            <objects>
-                <viewController id="nPM-t9-fZS" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ID7-WI-aov"/>
-                        <viewControllerLayoutGuide type="bottom" id="xkf-Q7-FdL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PtU-Ba-alP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="suf-Nb-rbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3542" y="1162"/>
+            <point key="canvasLocation" x="2878" y="1162"/>
         </scene>
         <!--Transform View Controller-->
         <scene sceneID="4eA-6v-Neh">
